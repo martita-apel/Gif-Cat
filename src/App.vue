@@ -1,28 +1,36 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1>Random Gif Cat</h1>
+    <Gif msg="" />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Gif from "./components/Gif.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    Gif,
+  },
+};
 </script>
 
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   text-align: center;
+  background-color: #30cafc;
+  background-size: cover;
   color: #2c3e50;
-  margin-top: 60px;
+  padding-bottom: 50px;
+}
+h1 {
+  font-size: 80px;
+  margin: 0;
+  padding: 40px;
+}
+img {
+  margin-bottom: 50px;
 }
 </style>
